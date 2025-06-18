@@ -1,0 +1,5 @@
+title: mimocha.blog
+author: mimocha
+description: A collection of random thoughts, distilled for future reference.
+theme: minima
+baseurl: "/blog"
