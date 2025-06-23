@@ -25,4 +25,12 @@ I plan to write my personal research and interesting devlogs here on an infreque
             {% endfor %}
         </small>
     {% endif %}
+    {% if post.categories %}
+        <br>
+        <small>Categories: 
+            {% for cat in post.categories %}
+                <code>{{ cat }}</code>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+        </small>
+    {% endif %}
 {% endfor %}
