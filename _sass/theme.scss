@@ -9,6 +9,7 @@
 
 body {
   width: 100vw;
+  min-height: 100vh;
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
@@ -16,6 +17,13 @@ body {
   // Horizontal padding variable for content area calculations
   // (i.e. 2*h_margins + 2*h_padding)
   --content-hpad: calc(2*10px + 2*10px);
+}
+
+// Specifically target the main container to ensure it takes up the full viewport height
+// This is only required for the shippou pattern on the homepage
+body>.grid-container {
+  min-height: 100vh;
+  align-items: start;
 }
 
 .grid-container {
@@ -115,7 +123,19 @@ section {
 // ========================================================================== //
 
 body {
-  background: nth($secondary-greys, 4);
+  background: linear-gradient(to bottom, nth($secondary-greys, 5), nth($secondary-greys, 4));
+}
+
+.shippou-pattern {
+  background-image:
+    -webkit-radial-gradient(closest-side, transparent 99%, rgba(34,37,46,0.5) 100%),
+    -webkit-radial-gradient(closest-side, transparent 99%, rgba(34,37,46,0.5) 100%);
+  background-image:
+    radial-gradient(closest-side, transparent 99%, rgba(34,37,46,0.5) 100%),
+    radial-gradient(closest-side, transparent 99%, rgba(34,37,46,0.5) 100%);
+  background-repeat: repeat;
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 #header {
@@ -125,6 +145,7 @@ body {
 }
 
 #content {
+  background-color: nth($secondary-greys, 4);
   border: 1px solid nth($primary-greys, 3);
   border-radius: 5px;
 }
