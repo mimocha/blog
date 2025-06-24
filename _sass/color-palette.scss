@@ -1,0 +1,93 @@
+// Color Palette for the project
+
+// Whites and Blacks
+$white-tones: (
+    #FFFFFF,
+    #F0F0F0,
+    #E0E0E0,
+    #D0D0D0,
+    #C0C0C0
+);
+
+$black-tones: (
+    #000000,
+    #101010,
+    #202020,
+    #303030,
+    #404040
+);
+
+// Primary colors -- Orangeish tones
+$primary-tints: (
+    #D4600D,
+    #E0803A,
+    #EDA26D,
+    #FAC8A5,
+    #FFEADB
+);
+
+$primary-shades: (
+    #D4600D,
+    #A1490A,
+    #6E3207,
+    #3B1A04,
+    #080300
+);
+
+$primary-greys: (
+    #D4B49D,
+    #A18877,
+    #6E5D51,
+    #3B322B,
+    #2E2722
+);
+
+// Secondary colors -- Blueish tones
+$secondary-tints: (
+    #0D84D4,
+    #3A9EE0,
+    #6DBAED,
+    #A5D8FA,
+    #DBF1FF
+);
+
+$secondary-shades: (
+    #0D84D4,
+    #0A64A1,
+    #07446E,
+    #04253B,
+    #000508
+);
+
+$secondary-greys: (
+    #9DABD4,
+    #7782A1,
+    #51596E,
+    #2B2F3A,
+    #22252E
+);
+
+// Tertiary colors -- Greenish tones
+$tertiary-tints: (
+    #0DD4A2,
+    #3AE0B7,
+    #6DEDCD,
+    #A5FAE5,
+    #DBFFF6
+);
+
+$tertiary-shades: (
+    #0DD4A2,
+    #0AA17B,
+    #076E54,
+    #043B2D,
+    #000806
+);
+
+$tertiary-greys: (
+    #9DD4C6,
+    #77A196,
+    #516E67,
+    #2B3B37,
+    #222E2B
+);

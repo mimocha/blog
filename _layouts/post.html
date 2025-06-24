@@ -6,40 +6,38 @@
   </head>
 
   <body>
-      <div id="header">
-        <h2>{{ site.title | default: site.github.repository_name }}</h2>
-        <nav>
-          <span class="nav-left"><a href="{{ site.github.profile }}">Github</a></span>
-          <span class="nav-center"><a href="{{ site.author.url-home }}">Homepage</a></span>
-          <span class="nav-right"><a href="{{ site.author.url-blog }}">Home</a></span>
-        </nav>
-      </div>
+    <div class="grid-container">
+      {% include header.html %}
 
-    <div class="wrapper">
-      <section>
-        <div id="title">
-          <h1>{{ page.title }}</h1>
-        </div>
+      <main id="content">
+        <section>
+          <div id="title">
+            <h1>{{ page.title }}</h1>
+          </div>
 
-        <div id="post-meta">
-          <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+          <div class="post-meta">
+            <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
             <span class="post-author">by <a href="{{ site.github.profile }}">{{ site.github.username }}</a></span>
-          {% if page.tags %}
-            <span class="post-tags">Tags: {{ page.tags | join: ", " }}</span>
-          {% endif %}
-          {% if page.categories %}
-            <span class="post-categories">Categories: {{ page.categories | join: ", " }}</span>
-          {% endif %}
-        </div>
-        <hr>
+            <br>
+            {% unless page.categories == empty %}
+              <span class="post-categories">Categories: {{ page.categories | join: ", " }}</span>
+            {% endunless %}
+            <br>
+            {% unless page.tags == empty %}
+              <span class="post-tags">Tags: {{ page.tags | join: ", " }}</span>
+            {% endunless %}
+          </div>
+          <hr>
 
-        <div id="table-of-contents">
-          {% toc %}
-        </div>
-        <hr>
+          {% comment %} TODO: Add Table of Contents {% endcomment %}
 
-        {{ content }}
-      </section>
+          {{ content }}
+        </section>
+      </main>
+
+      {% comment %} TODO: Add Sidebar {% endcomment %}
+      {% comment %} TODO: Add contents minimap {% endcomment %}
+
     </div>
   </body>
 </html>
