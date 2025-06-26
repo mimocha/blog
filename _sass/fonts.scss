@@ -1,103 +1,408 @@
-@font-face {
-    font-family: 'OpenSansLight';
-    src: url('../fonts/OpenSans-Light-webfont.eot');
-    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// ========================================================================== //
+// Fira Sans
+// ========================================================================== //
+$fira-sans-path: '../fonts/Fira_Sans';
 
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
+// Italics
 @font-face {
-    font-family: 'OpenSansLightItalic';
-    src: url('../fonts/OpenSans-LightItalic-webfont.eot');
-    src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('#{$fira-sans-path}/FiraSans-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'OpenSansRegular';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    -webkit-font-smoothing:antialiased;
-}
+// ========================================================================== //
+// Fira Sans Condensed
+// ========================================================================== //
+$fira-sans-condensed-path: '../fonts/Fira_Sans_Condensed';
 
 @font-face {
-    font-family: 'OpenSansItalic';
-    src: url('../fonts/OpenSans-Italic-webfont.eot');
-    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
-    font-weight: normal;
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-Thin.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
-    -webkit-font-smoothing:antialiased;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
+// Italics
 @font-face {
-    font-family: 'OpenSansSemibold';
-    src: url('../fonts/OpenSans-Semibold-webfont.eot');
-    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    -webkit-font-smoothing:antialiased;
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans Condensed';
+    src: url('#{$fira-sans-condensed-path}/FiraSansCondensed-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'OpenSansSemiboldItalic';
-    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
-    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    -webkit-font-smoothing:antialiased;
-}
+// ========================================================================== //
+// Fira Code
+// ========================================================================== //
+$fira-code-path: '../fonts/Fira_Code';
 
 @font-face {
-    font-family: 'OpenSansBold';
-    src: url('../fonts/OpenSans-Bold-webfont.eot');
-    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
-    font-weight: normal;
+    font-family: 'Fira Code';
+    src: url('#{$fira-code-path}/FiraCode-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300 700;
     font-style: normal;
-    -webkit-font-smoothing:antialiased;
+    font-display: swap;
 }
 
+// ========================================================================== //
+// Sarabun
+// ========================================================================== //
+$sarabun-path: '../fonts/Sarabun';
+
 @font-face {
-    font-family: 'OpenSansBoldItalic';
-    src: url('../fonts/OpenSans-BoldItalic-webfont.eot');
-    src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
-    font-weight: normal;
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-Thin.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
-    -webkit-font-smoothing:antialiased;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Italics
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sarabun';
+    src: url('#{$sarabun-path}/Sarabun-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
 }
 
 // ========================================================================== //
 // Font Definitions
 // ========================================================================== //
 
-$header-font: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$code-font: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+$header-font: 'FiraSans Condensed', 'Sarabun', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font: 'FiraSans', 'Sarabun', Helvetica, Arial, sans-serif;
+$code-font: 'Fira Code', Lucida Console, Terminal, monospace;
