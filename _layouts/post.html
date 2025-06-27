@@ -16,9 +16,16 @@
           </div>
 
           <div class="post-meta">
-            <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-            <span class="post-author">by <a href="{{ site.github.profile }}">{{ site.github.username }}</a></span>
-            <br>
+            <span>
+              <span>{{ page.date | date: "%B %d, %Y" }}</span>
+              <span>by <a href="{{ site.github.profile }}">{{ site.github.username }}</a></span>
+            </span>
+            <span>
+              Word count: approx.
+              <span id="word-count"></span>
+              | Reading time: approx.
+              <span id="reading-time"></span>
+            </span>
             {% unless page.categories == empty %}
               {% if page.categories.size > 1 %}
                 <span class="post-categories">Categories: {{ page.categories | join: ", " }}</span>
@@ -27,7 +34,6 @@
                 <span class="post-categories">Category: {{ page.categories | join: ", " }}</span>
               {% endif %}
             {% endunless %}
-            <br>
             {% unless page.tags == empty %}
               <span class="post-tags">Tags: {{ page.tags | join: ", " }}</span>
             {% endunless %}
@@ -43,5 +49,7 @@
       {% comment %} TODO: Add contents minimap? {% endcomment %}
 
     </div>
+
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
   </body>
 </html>
