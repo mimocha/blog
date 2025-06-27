@@ -20,7 +20,12 @@
             <span class="post-author">by <a href="{{ site.github.profile }}">{{ site.github.username }}</a></span>
             <br>
             {% unless page.categories == empty %}
-              <span class="post-categories">Categories: {{ page.categories | join: ", " }}</span>
+              {% if page.categories.size > 1 %}
+                <span class="post-categories">Categories: {{ page.categories | join: ", " }}</span>
+              {% endif %}
+              {% if page.categories.size == 1 %}
+                <span class="post-categories">Category: {{ page.categories | join: ", " }}</span>
+              {% endif %}
             {% endunless %}
             <br>
             {% unless page.tags == empty %}
@@ -35,8 +40,7 @@
         </section>
       </main>
 
-      {% comment %} TODO: Add Sidebar {% endcomment %}
-      {% comment %} TODO: Add contents minimap {% endcomment %}
+      {% comment %} TODO: Add contents minimap? {% endcomment %}
 
     </div>
   </body>
