@@ -2,7 +2,7 @@
 layout: post
 title: How to Setup a Github Pages Blogsite
 date: 2025-06-27 19:00:00 +0700
-categories: [guide]
+categories: [how-to]
 tags: [github pages, blogsite, jekyll]
 ---
 
