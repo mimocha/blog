@@ -3,7 +3,7 @@ layout: post
 title: List of Jekyll Layouts for Common Github Pages Themes
 date: 2025-07-01 00:00:00 +0700
 categories: [reference]
-tags: [github pages, blogsite, jekyll]
+tags: [github-pages, blogsite, jekyll]
 ---
 
 I personally had issues when trying to customize this Jekyll blogsite for the first time

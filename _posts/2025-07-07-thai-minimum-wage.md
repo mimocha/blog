@@ -3,7 +3,7 @@ layout: post
 title: Creating the Thailand Minimum Wage Dataset
 date: 2025-07-07
 categories: [devlog]
-tags: [dataset, thailand, minimum wage]
+tags: [dataset, thailand, minimum-wage, nlp]
 ---
 
 I created this dataset for Thailand's historical minimum wage:

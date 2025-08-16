@@ -3,7 +3,7 @@ layout: post
 title: Developing My Own Custom Input Method Engine
 date: 2025-07-27
 categories: [devlog]
-tags: [ime, nlp]
+tags: [ime, nlp, thailand, tutorial]
 ---
 
 ## Backstory

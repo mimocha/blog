@@ -3,8 +3,7 @@ layout: post
 title: Hello Internet
 date: 2025-06-18 13:00:00 +0700
 categories: [misc]
-excerpt: Just testing out Github page and Jekyll
-toc: true
+tags: [demo, testing]
 ---
 
 ```
